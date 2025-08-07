@@ -1,4 +1,5 @@
 import random
+
 def play_game(chances, ran_num):
         for i in range(chances - 1, -1, -1):
 
@@ -32,16 +33,22 @@ def main():
     print("\n")
 
     if choice == "1":
-        print("Great! you selected the Easy difficulty level. \n"
-        "Let's start the game! \n")
+        print(
+            "Great! you selected the Easy difficulty level. \n"
+            "Let's start the game! \n"
+            )
         chances = 10
     elif choice == "2":
-        print("Great! You selected the Medium difficulty level. \n"
-        "Let's start the game! \n")
+        print(
+            "Great! You selected the Medium difficulty level. \n" 
+            "Let's start the game! \n"
+            )
         chances = 5
     elif choice == "3":
-        print("Great! You selected the Hard difficulty level. \n"
-        "Let's start the game! \n")
+        print(
+            "Great! You selected the Hard difficulty level. \n"
+            "Let's start the game! \n"
+            )
         chances = 3
     else:
         print("Please enter a valid choice.")
