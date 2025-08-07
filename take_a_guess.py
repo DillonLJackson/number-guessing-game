@@ -1,10 +1,12 @@
 import random
 
+# play_game function iterates through the guesses made to based on the difficulty selected and decides if the player guessed correctly
 def play_game(chances, ran_num):
         for i in range(chances - 1, -1, -1):
 
             guess = input("Take a guess: ")
 
+            # this block determines if the guessed num is higher of lower than ran_num    
             if int(guess) < ran_num:
                 print(f"Incorrect! The number is higher than {guess}")
             if int(guess) > ran_num:
@@ -17,7 +19,7 @@ def play_game(chances, ran_num):
             print(f"You're out of attempts, the number was {ran_num}")
 
 
-
+# welcome the player and describe the game
 def main():
 
     print("Welcome to the Number Guessing Game! \n"
@@ -32,6 +34,7 @@ def main():
     choice = input("Enter your choice: ") 
     print("\n")
 
+    # if-else statements determing the difficulty     
     if choice == "1":
         print(
             "Great! you selected the Easy difficulty level. \n"
@@ -54,6 +57,7 @@ def main():
         print("Please enter a valid choice.")
         return
 
+    # set the number to be guessed and call play_game function    
     ran_num = random.randint(1, 100)
     play_game(chances, ran_num)
 
