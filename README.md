@@ -35,6 +35,6 @@ This is a simple number guessing game built in Python. In which the user will se
 '''bash
 python take_a_guess.py
 
-### file URL
+### project URL
 
 https://roadmap.sh/projects/number-guessing-game
