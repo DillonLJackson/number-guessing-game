@@ -49,5 +49,6 @@ def main():
 
     ran_num = random.randint(1, 100)
     play_game(chances, ran_num)
-    
+
+if __name__ == "__main__":
     main()
